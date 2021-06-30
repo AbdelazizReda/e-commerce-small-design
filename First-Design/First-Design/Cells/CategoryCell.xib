@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="First_Design" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3h-ja-2aV">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="151"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-mg-w1C">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="101"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlL-tT-9Kl">
+                                <rect key="frame" x="0.0" y="101" width="150" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPr-um-NRc">
+                                        <rect key="frame" x="24" y="15" width="102.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hPr-um-NRc" firstAttribute="centerX" secondItem="FlL-tT-9Kl" secondAttribute="centerX" id="5ZI-9F-Gfa"/>
+                                    <constraint firstItem="hPr-um-NRc" firstAttribute="centerY" secondItem="FlL-tT-9Kl" secondAttribute="centerY" id="V2l-uX-YCC"/>
+                                    <constraint firstAttribute="height" constant="50" id="dAH-Ov-3xe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FlL-tT-9Kl" firstAttribute="top" secondItem="9fy-mg-w1C" secondAttribute="bottom" id="2am-EI-GT2"/>
+                            <constraint firstAttribute="trailing" secondItem="9fy-mg-w1C" secondAttribute="trailing" id="5ln-cb-p6N"/>
+                            <constraint firstAttribute="trailing" secondItem="FlL-tT-9Kl" secondAttribute="trailing" id="Hrb-LY-0j6"/>
+                            <constraint firstItem="9fy-mg-w1C" firstAttribute="top" secondItem="A3h-ja-2aV" secondAttribute="top" id="Md0-Sd-tbH"/>
+                            <constraint firstItem="9fy-mg-w1C" firstAttribute="leading" secondItem="A3h-ja-2aV" secondAttribute="leading" id="PVV-pI-PsL"/>
+                            <constraint firstAttribute="bottom" secondItem="FlL-tT-9Kl" secondAttribute="bottom" id="ifr-d8-v6X"/>
+                            <constraint firstItem="FlL-tT-9Kl" firstAttribute="leading" secondItem="A3h-ja-2aV" secondAttribute="leading" id="mN5-5r-qga"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="A3h-ja-2aV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0XW-f2-8uY"/>
+                <constraint firstAttribute="trailing" secondItem="A3h-ja-2aV" secondAttribute="trailing" id="Dtj-Me-zPV"/>
+                <constraint firstItem="A3h-ja-2aV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kIt-gR-OwL"/>
+                <constraint firstAttribute="bottom" secondItem="A3h-ja-2aV" secondAttribute="bottom" id="vKB-kH-lv6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="150" height="151"/>
+            <point key="canvasLocation" x="210.1449275362319" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="0" width="225" height="225"/>
+    </resources>
+</document>
